@@ -1,0 +1,1034 @@
+{
+  "Script": [
+    {
+      "Inst": "PushExecutionFlow",
+      "Offset": 1214,
+      "StatementIndex": 0
+    },
+    {
+      "Inst": "ComputedJump",
+      "OffsetExpression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Int",
+          "PinSubCategory": "Int"
+        },
+        "Variable Name": "EntryPoint"
+      },
+      "StatementIndex": 5
+    },
+    {
+      "Inst": "PushExecutionFlow",
+      "Offset": 111,
+      "StatementIndex": 15
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_BooleanOR_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "BooleanOR",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "InstanceVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "vis"
+          },
+          {
+            "Inst": "InstanceVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "seen"
+          }
+        ]
+      },
+      "StatementIndex": 20
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_BooleanOR_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "BooleanOR",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "CallFunc_BooleanOR_ReturnValue"
+          },
+          {
+            "Inst": "InstanceVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "isVis"
+          }
+        ]
+      },
+      "StatementIndex": 58
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 208,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_BooleanOR_ReturnValue_1"
+      },
+      "StatementIndex": 96
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 110
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Float",
+          "PinSubCategory": "Float"
+        },
+        "Variable Name": "CallFunc_RandomFloatInRange_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "RandomFloatInRange",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "FloatConst",
+            "Value": 2700.0
+          },
+          {
+            "Inst": "FloatConst",
+            "Value": 3600.0
+          }
+        ]
+      },
+      "StatementIndex": 111
+    },
+    {
+      "Inst": "CallMath",
+      "Function": "Delay",
+      "ContextClass": "/Script/Engine.KismetSystemLibrary",
+      "Parameters": [
+        {
+          "Inst": "Self"
+        },
+        {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Float",
+            "PinSubCategory": "Float"
+          },
+          "Variable Name": "CallFunc_RandomFloatInRange_ReturnValue"
+        },
+        {
+          "Inst": "StructConst",
+          "Struct": "/Script/Engine.LatentActionInfo",
+          "Properties": {
+            "Missing property name0": [
+              {
+                "Inst": "SkipOffsetConst",
+                "Value": 15
+              }
+            ],
+            "Missing property name1": [
+              {
+                "Inst": "IntConst",
+                "Value": -1111330292
+              }
+            ],
+            "Missing property name2": [
+              {
+                "Inst": "NameConst",
+                "Value": "ExecuteUbergraph_NewBlueprint4"
+              }
+            ],
+            "Missing property name3": [
+              {
+                "Inst": "Self"
+              }
+            ]
+          }
+        }
+      ],
+      "StatementIndex": 149
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 207
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+          },
+          "Variable Name": "render"
+        },
+        "SkipOffsetForNull": 15,
+        "RValuePropertyOuter": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "RValuePropertyName": "CallFunc_WasRecentlyRendered_ReturnValue_1",
+        "Expression": {
+          "Inst": "FinalFunction",
+          "Function": "WasRecentlyRendered",
+          "Parameters": [
+            {
+              "Inst": "FloatConst",
+              "Value": 0.5
+            }
+          ]
+        }
+      },
+      "StatementIndex": 208
+    },
+    {
+      "Inst": "PopExecutionFlowIfNot",
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue_1"
+      },
+      "StatementIndex": 255
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Int",
+          "PinSubCategory": "Int"
+        },
+        "Variable Name": "CallFunc_RandomIntegerInRange_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "RandomIntegerInRange",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 99
+          }
+        ]
+      },
+      "StatementIndex": 265
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_IntInt_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "EqualEqual_IntInt",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Int",
+              "PinSubCategory": "Int"
+            },
+            "Variable Name": "CallFunc_RandomIntegerInRange_ReturnValue"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 303
+    },
+    {
+      "Inst": "PopExecutionFlowIfNot",
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_IntInt_ReturnValue"
+      },
+      "StatementIndex": 337
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "vis"
+      },
+      "Expression": {
+        "Inst": "True"
+      },
+      "StatementIndex": 347
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 358
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "ObjectConst",
+        "Object": "/Game/main/lib.Default__lib_C"
+      },
+      "SkipOffsetForNull": 24,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "LocalVirtualFunction",
+        "FunctionName": "getMainGameInstance",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Object",
+              "PinSubCategory": "Object",
+              "PinSubCategoryObject": "/Game/main/mainGameInstance.mainGameInstance_C"
+            },
+            "Variable Name": "CallFunc_getMainGameInstance_AsGame_Inst"
+          }
+        ]
+      },
+      "StatementIndex": 359
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_ByteByte_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "EqualEqual_ByteByte",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "Context",
+            "Context": {
+              "Inst": "LocalVariable",
+              "Variable Outer": {
+                "PinCategory": "Object",
+                "PinSubCategory": "Object",
+                "PinSubCategoryObject": "/Game/main/mainGameInstance.mainGameInstance_C"
+              },
+              "Variable Name": "CallFunc_getMainGameInstance_AsGame_Inst"
+            },
+            "SkipOffsetForNull": 9,
+            "RValuePropertyOuter": "##NOT SERIALIZED##",
+            "RValuePropertyName": "gamemode",
+            "Expression": {
+              "Inst": "InstanceVariable",
+              "Variable Outer": "##NOT SERIALIZED##",
+              "Variable Name": "gamemode"
+            }
+          },
+          {
+            "Inst": "ByteConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 405
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "EqualEqual_ByteByte",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "Context",
+            "Context": {
+              "Inst": "LocalVariable",
+              "Variable Outer": {
+                "PinCategory": "Object",
+                "PinSubCategory": "Object",
+                "PinSubCategoryObject": "/Game/main/mainGameInstance.mainGameInstance_C"
+              },
+              "Variable Name": "CallFunc_getMainGameInstance_AsGame_Inst"
+            },
+            "SkipOffsetForNull": 9,
+            "RValuePropertyOuter": "##NOT SERIALIZED##",
+            "RValuePropertyName": "gamemode",
+            "Expression": {
+              "Inst": "InstanceVariable",
+              "Variable Outer": "##NOT SERIALIZED##",
+              "Variable Name": "gamemode"
+            }
+          },
+          {
+            "Inst": "ByteConst",
+            "Value": 1
+          }
+        ]
+      },
+      "StatementIndex": 458
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_BooleanOR_ReturnValue_2"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "BooleanOR",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "CallFunc_EqualEqual_ByteByte_ReturnValue"
+          },
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_1"
+          }
+        ]
+      },
+      "StatementIndex": 511
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 564,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_BooleanOR_ReturnValue_2"
+      },
+      "StatementIndex": 549
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 563
+    },
+    {
+      "Inst": "VirtualFunction",
+      "Function": "K2_DestroyActor",
+      "Parameters": [],
+      "StatementIndex": 564
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 578
+    },
+    {
+      "Inst": "PopExecutionFlowIfNot",
+      "Condition": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "vis"
+      },
+      "StatementIndex": 579
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 800,
+      "Condition": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "isVis"
+      },
+      "StatementIndex": 589
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+          },
+          "Variable Name": "render"
+        },
+        "SkipOffsetForNull": 15,
+        "RValuePropertyOuter": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "RValuePropertyName": "CallFunc_WasRecentlyRendered_ReturnValue",
+        "Expression": {
+          "Inst": "FinalFunction",
+          "Function": "WasRecentlyRendered",
+          "Parameters": [
+            {
+              "Inst": "FloatConst",
+              "Value": 0.5
+            }
+          ]
+        }
+      },
+      "StatementIndex": 603
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 676,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue"
+      },
+      "StatementIndex": 650
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "seen"
+      },
+      "Expression": {
+        "Inst": "True"
+      },
+      "StatementIndex": 664
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 675
+    },
+    {
+      "Inst": "PopExecutionFlowIfNot",
+      "Condition": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "seen"
+      },
+      "StatementIndex": 676
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "vis"
+      },
+      "Expression": {
+        "Inst": "False"
+      },
+      "StatementIndex": 686
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "isVis"
+      },
+      "Expression": {
+        "Inst": "False"
+      },
+      "StatementIndex": 697
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "seen"
+      },
+      "Expression": {
+        "Inst": "False"
+      },
+      "StatementIndex": 708
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+        },
+        "Variable Name": "body"
+      },
+      "SkipOffsetForNull": 12,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "FinalFunction",
+        "Function": "SetVisibility",
+        "Parameters": [
+          {
+            "Inst": "False"
+          },
+          {
+            "Inst": "False"
+          }
+        ]
+      },
+      "StatementIndex": 719
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.MaterialInstanceDynamic"
+        },
+        "Variable Name": "dynmat"
+      },
+      "SkipOffsetForNull": 24,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "FinalFunction",
+        "Function": "SetTextureParameterValue",
+        "Parameters": [
+          {
+            "Inst": "NameConst",
+            "Value": "tex"
+          },
+          {
+            "Inst": "NoObject"
+          }
+        ]
+      },
+      "StatementIndex": 753
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 799
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+          },
+          "Variable Name": "render"
+        },
+        "SkipOffsetForNull": 15,
+        "RValuePropertyOuter": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "RValuePropertyName": "CallFunc_WasRecentlyRendered_ReturnValue",
+        "Expression": {
+          "Inst": "FinalFunction",
+          "Function": "WasRecentlyRendered",
+          "Parameters": [
+            {
+              "Inst": "FloatConst",
+              "Value": 0.5
+            }
+          ]
+        }
+      },
+      "StatementIndex": 800
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 862,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_WasRecentlyRendered_ReturnValue"
+      },
+      "StatementIndex": 847
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 861
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "isVis"
+      },
+      "Expression": {
+        "Inst": "True"
+      },
+      "StatementIndex": 862
+    },
+    {
+      "Inst": "LocalVirtualFunction",
+      "FunctionName": "gen",
+      "Parameters": [
+        {
+          "Inst": "StringConst",
+          "Value": "V2BhDu#UM&&@wP%zLcgzjkAKP9$P!$f"
+        }
+      ],
+      "StatementIndex": 873
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+        },
+        "Variable Name": "body"
+      },
+      "SkipOffsetForNull": 12,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "FinalFunction",
+        "Function": "SetVisibility",
+        "Parameters": [
+          {
+            "Inst": "True"
+          },
+          {
+            "Inst": "False"
+          }
+        ]
+      },
+      "StatementIndex": 920
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 954
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_StrStr_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "EqualEqual_StrStr",
+        "ContextClass": "/Script/Engine.KismetStringLibrary",
+        "Parameters": [
+          {
+            "Inst": "InstanceVariable",
+            "Variable Outer": {
+              "PinCategory": "String",
+              "PinSubCategory": "String"
+            },
+            "Variable Name": "NewVar_0"
+          },
+          {
+            "Inst": "StringConst",
+            "Value": "!DmMrP#@TrCVU6EoBcprm@f%%Cnu^B9"
+          }
+        ]
+      },
+      "StatementIndex": 955
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 1176,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_EqualEqual_StrStr_ReturnValue"
+      },
+      "StatementIndex": 1017
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.MaterialInstanceDynamic"
+        },
+        "Variable Name": "dynmat"
+      },
+      "SkipOffsetForNull": 24,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "FinalFunction",
+        "Function": "SetTextureParameterValue",
+        "Parameters": [
+          {
+            "Inst": "NameConst",
+            "Value": "tex"
+          },
+          {
+            "Inst": "NoObject"
+          }
+        ]
+      },
+      "StatementIndex": 1031
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "InstanceVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.StaticMeshComponent"
+        },
+        "Variable Name": "body"
+      },
+      "SkipOffsetForNull": 12,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "FinalFunction",
+        "Function": "SetVisibility",
+        "Parameters": [
+          {
+            "Inst": "False"
+          },
+          {
+            "Inst": "False"
+          }
+        ]
+      },
+      "StatementIndex": 1077
+    },
+    {
+      "Inst": "PushExecutionFlow",
+      "Offset": 1121,
+      "StatementIndex": 1111
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 15,
+      "StatementIndex": 1116
+    },
+    {
+      "Inst": "CallMath",
+      "Function": "Delay",
+      "ContextClass": "/Script/Engine.KismetSystemLibrary",
+      "Parameters": [
+        {
+          "Inst": "Self"
+        },
+        {
+          "Inst": "FloatConst",
+          "Value": 0.0
+        },
+        {
+          "Inst": "StructConst",
+          "Struct": "/Script/Engine.LatentActionInfo",
+          "Properties": {
+            "Missing property name0": [
+              {
+                "Inst": "SkipOffsetConst",
+                "Value": 359
+              }
+            ],
+            "Missing property name1": [
+              {
+                "Inst": "IntConst",
+                "Value": 1833697577
+              }
+            ],
+            "Missing property name2": [
+              {
+                "Inst": "NameConst",
+                "Value": "ExecuteUbergraph_NewBlueprint4"
+              }
+            ],
+            "Missing property name3": [
+              {
+                "Inst": "Self"
+              }
+            ]
+          }
+        }
+      ],
+      "StatementIndex": 1121
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 1175
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "ObjectConst",
+        "Object": "/Game/main/lib.Default__lib_C"
+      },
+      "SkipOffsetForNull": 15,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "LocalVirtualFunction",
+        "FunctionName": "end",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          }
+        ]
+      },
+      "StatementIndex": 1176
+    },
+    {
+      "Inst": "PopExecutionFlow",
+      "StatementIndex": 1213
+    },
+    {
+      "Inst": "Return",
+      "Expression": {
+        "Inst": "Nothing"
+      },
+      "StatementIndex": 1214
+    },
+    {
+      "Inst": "EndOfScript",
+      "StatementIndex": 1216
+    }
+  ]
+}
